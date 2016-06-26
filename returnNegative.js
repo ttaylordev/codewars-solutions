@@ -1,6 +1,6 @@
 //NOTE: write a function that accepts a number as a parameter and reutnrs that number as a negative number, 0 cannot be negative.$anchorScroll
 
-// my solution:
+// my first solution:
 function makeNegative(num) {
     'use strict';
     if ((num === 0) || (num < 0)) {
@@ -9,6 +9,15 @@ function makeNegative(num) {
         num -= (num * 2);
         return num;
     }
+}
+
+// my improved version
+function makeNegative(num) {
+    'use strict';
+    if (num > 0) {
+    num -= (num * 2);
+    }
+    return num;
 }
 
 
